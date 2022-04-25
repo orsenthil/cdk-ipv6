@@ -8,7 +8,7 @@ export class NetworkStack extends Stack {
     super(scope, id, props);
 
     // an IPv6 enabled VPC 
-    const vpc = new IPv6Vpc(this, 'IPv6Demo', {
+    const vpc = new IPv6Vpc(this, 'SenthilIPv6Test', {
 
       // technically, the NAT gateway is not used with IPv6 but VPC constructs complains when
       // using PRIVATE subnets without NAT gateway :-(
